@@ -31,6 +31,7 @@ public class AndroidAppOpsLauncherActivity extends Activity {
 	}
 	
 	private void launchAppOps() {
+//		launchAppOpsViaAction();
         if (launchAppOpsViaAction()) {
             // Classic method for 4.3 worked !
         } else if (isAndroidVersionIncompatible()) {
