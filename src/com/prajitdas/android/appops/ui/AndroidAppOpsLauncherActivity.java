@@ -17,10 +17,10 @@ public class AndroidAppOpsLauncherActivity extends Activity {
 		// AppOps removed from Android versions
 		"4.4.2",
 		"4.4.3",
-		"4.4.4",
-		"5.0",
-		"5.0.1",
-		"5.0.2"
+		"4.4.4"//,
+//		"5.0",
+//		"5.0.1",
+//		"5.0.2"
 	};
 	
 	@Override
@@ -31,7 +31,6 @@ public class AndroidAppOpsLauncherActivity extends Activity {
 	}
 	
 	private void launchAppOps() {
-//		launchAppOpsViaAction();
         if (launchAppOpsViaAction()) {
             // Classic method for 4.3 worked !
         } else if (isAndroidVersionIncompatible()) {
